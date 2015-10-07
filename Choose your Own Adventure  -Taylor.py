@@ -13,7 +13,6 @@ if name == "Taylor":
 	print "Wow! Nice name, You are Da Bomb! Hi, Taylor!!\n\n\n"
 
 if name != "Taylor":
-	print "Hi, " + name
 	print "You are not Da Bomb, Sorry! That Sucks for you!!! :P \n\n\n"
 	
 
@@ -25,7 +24,7 @@ if gameOver == 1:
 
 while gameOver != 1:
 	if inRoom == "main":
-		print "You are stuck in a haunted house, try to get out\n"		
+		print name + ", you are stuck in a haunted house! Try to get out.\n"		
 		print "1) Move to the rotting storage room"
 		print "2) Move to the flooding bathroom"
 		print "3) Move to moldy kitchen"
@@ -137,6 +136,7 @@ while gameOver != 1:
 			
 			if action == 3:
 				print "Wow, you aren't so lame after all!\n\n You will be asked another riddle!"
+				print "I will tell all the other games to make it harder for " + name + "!\n\n"
 				
 				print "Riddle 2/3: In a one story yellow house, everything is yellow. The lamp is yellow, the beds are yellow, the couch is yeller, the floor is yellow, the celing is yellow, the walls are yellow, EVERYTHING is yellow.\n"
 				print "What color was the couch?\n"
@@ -189,4 +189,4 @@ while gameOver != 1:
 		gameOver = 1
 		
 	if gameOver == 1:
-		print "The End :D Thanks For playing! By: Taylor"
+		print "The End :D Thanks For playing! By: Taylor Quinn"
