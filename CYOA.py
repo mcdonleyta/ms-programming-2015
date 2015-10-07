@@ -6,39 +6,78 @@ gun = 0
 men_dead = 0
 trapdoor = 0
 beenInMain = 0
-
+beenInWest = 0
+beenInEast = 0
 while hasEscaped == 0 and dead == 0:
-	if inRoom == "west":
-		print "You travel to a dusty room."
-		print "There is a key on the floor."
 	
-		print
-		print "1) Main Room"
-		print "2) Pick up Key"
-		print
+	if inRoom == "west":
+	
+		if beenInWest == 0:
+			print "You travel to a dusty room."
+			print "There is a key on the floor."
 		
-		action = raw_input("choose #1-2: ")
-		action = int(action)
+			print
+			print "1) Main Room"
+			print "2) Pick up Key"
+			print
+			
+			action = raw_input("choose #1-2: ")
+			action = int(action)
+			
+			if action == 1:
+				inRoom = "main"
+				beenInWest = 1
+			if action == 2:
+				hasKey = 1
+				beenInWest = 1
+
+		if beenInWest == 1:
+			print "You come back into the dusty room."
 		
-		if action == 1:
-			inRoom = "main"
-		if action == 2:
-			hasKey = 1
+			print "1) Main Room"
+			if haskey == 0:
+				print "2) Pick up Key"
+			
+			action = raw_input("choose #1-2: ")
+			action = int(action)
+			
+			if action == 1:
+				inRoom = "main"
+			if action == 2:
+				hasKey = 1
 
 	if inRoom == "east":
-		print "You find a small bedroom long abandoned."
-		print "You see a door."
-	
-		print "1) Main Room"
-		print "2) Try door"
+		if beenInEast == 0:
+			print "You find a small bedroom long abandoned."
+			print "You see a door."
 		
-		action = raw_input("choose #1-2: ")
-		action = int(action)
+			print "1) Main Room"
+			print "2) Try door"
+			
+			action = raw_input("choose #1-2: ")
+			action = int(action)
 
-		if action == 1:
-			inRoom = "main"
-		if action == 2:
-			inRoom = "secret 1"
+			if action == 1:
+				inRoom = "main"
+				beenInEast = 1
+			if action == 2:
+				inRoom = "secret 1"
+				beenInEast = 1
+			
+			if beenInEast == 1:
+				print "You come back int the bedroom."
+				print "You see a door."
+			
+				print "1) Main Room"
+				print "2) open door"
+				
+				action = raw_input("choose #1-2: ")
+				action = int(action)
+
+				if action == 1:
+					inRoom = "main"
+				if action == 2:
+					inRoom = "secret 1"
 			
 	if inRoom == "secret 1":
 		print "You enter a clean room with other people in it"
@@ -108,22 +147,37 @@ while hasEscaped == 0 and dead == 0:
 			trapdoor = 1
 			print "1) enter trapdoor"
 			print "2) leave room"
+		
+			
+	
+	if inRoom == secret_2:
+		print "you enter a dark room with now windows and only one bare lightbulb"
+		
+		print "1) leave the room"
+		print "2) explore the room"
+		
 			
 		action = raw_input("choose #1-2: ")
 		action = int(action)
 			
 		if action == 1:
-			inRoom = "main"
+			inRoom = "north"
 		if action == 2:
-			print "you enter a dark room with now windows and only one bare lightbulb"
-	
+			print "you found a old loaf of bread"
+			
+			print "1) leave room"
+			
+			action = raw_input("choose #1: ")
+			action = int(action)
+			
+		if action == 1:
+			inRoom = "north"
+		
 	if inRoom == "south":
 		print "There is a locked door here."
 	
-		print
 		print "1) Main Room"
 		print "2) Unlock door"
-		print
 		
 		action = raw_input("choose #1-2: ")
 		action = int(action)
@@ -188,7 +242,9 @@ while hasEscaped == 0 and dead == 0:
 			inRoom = "east"
 		if action == 5:
 			
-	if dead != 0
-		print "you died"
-	if has key == 1:
-		print "You won! Hurray \(^.^)/"
+		
+	
+		if dead != 0
+			print "you died"
+		else: 
+			print "You won! Hurray \(^.^)/"

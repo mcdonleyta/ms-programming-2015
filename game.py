@@ -14,5 +14,5 @@ while guess !=secret:
 		score = score + 1 
 	if guess < secret: 
 		print "Too Low, the airplane is going to hit the new b 797-900"
-	else
+	if guess > secret: 
 		print "Too high, The airplane is going to hit the sr-71 spyplane"
