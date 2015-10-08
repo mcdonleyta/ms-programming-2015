@@ -1,3 +1,5 @@
+#max adventure game
+
 inRoom = "main"
 haskey = 0
 hasAutomatic = 0
