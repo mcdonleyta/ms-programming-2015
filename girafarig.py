@@ -54,6 +54,8 @@ while hasEscaped == 0 and isAlive == 1:
 	if inRoom == "South":
 		print "This room has a lot of weapons laying around"
 		
+		print "Only pick one of them and then return to the main room"
+		
 		print "1) pick up automatic"
 		print "2) pick up knife"
 		print "3) pick up sword"
@@ -85,21 +87,23 @@ while hasEscaped == 0 and isAlive == 1:
 		
 		fight = raw_input("what do you want to do")
 	
-		if fight  == "coward away" or fight == "go back to main room" or fight == "main room" or fight == "2":
+		if fight  == "coward away" or fight == "go back to main room" or fight == "main room" or fight == "1":
 			inRoom = "main"
 
-			if fight == "fight them" or fight == "fight" or fight == "2":
-				if hasSword == 1 or hasKnife ==1 or hasFrag == 1 or hasRocketlauncher == 1:
-					print "You were able to finish off all of them you win!"
-					hasEscaped = 1
-				else:
-					print "you lose you were a little dumb guy"
-					isAlive = 0
+		if fight == "fight them" or fight == "fight" or fight == "2":
+			if hasSword == 1 or hasKnife ==1 or hasFrag == 1 or hasRocketlauncher == 1:
+				print "You were able to finish off all of them YOU WIN cuz you didn't have to reload!"
+				hasEscaped = 1
+			elif hasAutomatic == 1 or hasPistol == 1:
+				print "you lose you were a little dumb guy cuz why u were reloading u died"
+				isAlive = 0
 
 
 
 	if inRoom == "East":
 		print "this room has 3 things"
+		
+		print "Only take one then return to the main room"
 		
 		print "1) rocket launcher"
 		print "2) frag"
@@ -122,61 +126,6 @@ while hasEscaped == 0 and isAlive == 1:
 		
 		
 		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -28,7 +28,6 @@ def run(width, height, title, fn_draw):
 	glutInitWindowPosition(0, 0)                           # set window position
 
 	window = glutCreateWindow(title)              		   # create window with title
-
 	glutDisplayFunc(easyDraw)                               # set draw function callback
 	glutIdleFunc(easyDraw)                                  # draw all the time
 
@@ -38,6 +37,7 @@ def setColor(R, G, B):
 	    glColor3f(R, G, B)                           # set color
 
 def setColorA(R, G, B, A):
+		glEnable(GL_BLEND);
 		glColor4f(R, G, B, A)
 
 def drawRect(x, y, width, height):
@@ -48,7 +48,8 @@ def drawRect(x, y, width, height):
     glVertex2f(x + width, y + height)                  # top right point
     glVertex2f(x, y + height)                          # top left point
 
-    glEnd()  
+    glEnd() 
+    glDisable(GL_BLEND) 
    
 def refresh2d(width, height):
     glViewport(0, 0, width, height)
@@ -57,4 +58,9 @@ def refresh2d(width, height):
     glOrtho(0.0, width, 0.0, height, 0.0, 1.0)
     glMatrixMode (GL_MODELVIEW)
     glLoadIdentity()
+    
+    glDisable(GL_DEPTH_TEST);
+    glClearColor(1, 4, 8, 34);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
    
