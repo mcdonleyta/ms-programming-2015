@@ -433,7 +433,7 @@ while hasEscaped == 0:
 		if action == 3:
 			print
 			print "There is a bomb." 
-			fastPress = raw_input("Press the 7 key FAST to deactivate the bomb!")
+			fastPress = raw_input("Press the 7 key FAST to deactivate the bomb!!! ")
 			fastPress = str(fastPress)
 			
 			if fastPress != "7":
@@ -451,8 +451,9 @@ while hasEscaped == 0:
 				print
 				print "1) Pick up note"
 				print "2) Back to Main Room"
+				print
 				
-				action3 = raw_input("Choose #1-2")
+				action3 = raw_input("Choose #1-2:   ")
 				action3 = int(action3)
 				
 				if action3 == 1:
