@@ -35,7 +35,11 @@ while hasEscaped == 0 and dead == 0:
 			print "You come back into the dusty room."
 		
 			print "1) Main Room"
+<<<<<<< HEAD
 			if hasKey == 0:
+=======
+			if haskey == 0:
+>>>>>>> cd0521edde7fb9a678ddd06e0d41185967275c99
 				print "2) Pick up Key"
 			
 			action = raw_input("choose #1-2: ")
@@ -119,6 +123,7 @@ while hasEscaped == 0 and dead == 0:
 			
 
 	if inRoom == "north":
+<<<<<<< HEAD
 		if gun == 0:
 			print "It looks like this used to be a kitchen."
 			print "There is cabinets lineing the wall"
@@ -138,6 +143,13 @@ while hasEscaped == 0 and dead == 0:
 			print "now what do you want to do"
 			print "1) main room"
 			print "2) explore the room"
+=======
+		print "It looks like this used to be a kitchen."
+		print "There is cabinets lineing the walls"
+		if gun == 0:
+			print "1) Main Room"
+			print "2) open the cabinets"
+>>>>>>> cd0521edde7fb9a678ddd06e0d41185967275c99
 		
 		action = raw_input("choose #1-2: ")
 		action = int(action)
@@ -145,6 +157,7 @@ while hasEscaped == 0 and dead == 0:
 		if action == 1:
 			inRoom = "main"
 		if action == 2:
+<<<<<<< HEAD
 			print "you found a trapdoor"
 			trapdoor = 1
 			print "1) enter the trapdoor"
@@ -159,6 +172,28 @@ while hasEscaped == 0 and dead == 0:
 				inRoom = "main"
 		
 	if inRoom == "secret_2":
+=======
+			gun = 1
+			print "you found a gun"
+		if gun == 1:
+				print "1) main room"
+				print "2) explore the room"
+		
+		action = raw_input("choose #1-2: ")
+		action = int(action)
+			
+		if action == 1:
+			inRoom = "main"
+		if action == 2:
+			print "you found a trapdoor"
+			trapdoor = 1
+			print "1) enter trapdoor"
+			print "2) leave room"
+		
+			
+	
+	if inRoom == secret_2:
+>>>>>>> cd0521edde7fb9a678ddd06e0d41185967275c99
 		print "you enter a dark room with now windows and only one bare lightbulb"
 		
 		print "1) leave the room"
@@ -195,13 +230,22 @@ while hasEscaped == 0 and dead == 0:
 		if action == 2:
 			if hasKey == 1:
 				print "You have found the exit!"
+<<<<<<< HEAD
 				print "You win! Hurray \(^.^)/"
+=======
+				print "You win!"
+>>>>>>> cd0521edde7fb9a678ddd06e0d41185967275c99
 				hasEscaped = 1
 			else:
 				print "You need a key for that!"
 	
+<<<<<<< HEAD
 	if inRoom == "main":
 		if beenInMain == 0:
+=======
+	if beenInMain == 0:
+		if inRoom == "main":
+>>>>>>> cd0521edde7fb9a678ddd06e0d41185967275c99
 			print "You are in a scary warehouse."
 			print "Try to escape if you can!"
 			print "if you don't get out, you die"
@@ -228,6 +272,7 @@ while hasEscaped == 0 and dead == 0:
 				inRoom = "east"
 				beenInMain = 1
 			
+<<<<<<< HEAD
 		elif beenInMain == 1:
 			print "you are back in the main room"
 				
@@ -255,3 +300,33 @@ while hasEscaped == 0 and dead == 0:
 				print "you died"
 			if hasKey == 1: 
 				print "You won! Hurray \(^.^)/"
+=======
+	if beenInMain == 1:
+		print "you are back in the main room"
+			
+		print "1) Move North"
+		print "2) Move South"
+		print "3) Move West"
+		print "4) Move East"
+		print "5) Explore the room"
+		
+		action = raw_input("choose #1-5: ")
+		action = int(action)
+		
+		if action == 1:
+			inRoom = "north"
+		if action == 2:
+			inRoom = "south"
+		if action == 3:
+			inRoom = "west"
+		if action == 4:
+			inRoom = "east"
+		if action == 5:
+			
+		
+	
+		if dead != 0
+			print "you died"
+		else: 
+			print "You won! Hurray \(^.^)/"
+>>>>>>> cd0521edde7fb9a678ddd06e0d41185967275c99
