@@ -1,7 +1,7 @@
-inRoom = "main"#9278
+inRoom = "main"
 hasKey = 0 
 hasEscaped = 0 
-
+ 
 while hasEscaped == 0: 
 	if inRoom == "west":
 		print
@@ -22,7 +22,11 @@ while hasEscaped == 0:
 			print
 			print '''The twin you asked answered,"The other twin would say that the left door is the correct one.'''
 			
+<<<<<<< HEAD
 			print 
+=======
+			print
+>>>>>>> b2405a06ce87aac83cf4710687c13344c8172b2c
 			print "1) left door"
 			print "2) right door"
 			print
@@ -54,7 +58,11 @@ while hasEscaped == 0:
 				if action == 1: 
 					inRoom = "main" 
 				if action == 2: 
+<<<<<<< HEAD
 					print "The note says, '92__'"
+=======
+					print "The note says, '9278'"
+>>>>>>> b2405a06ce87aac83cf4710687c13344c8172b2c
 					inRoom = "main" 
 		else: 
 			print
@@ -90,9 +98,14 @@ while hasEscaped == 0:
 				
 				if action2 == 1: 
 					inRoom = "main" 
+<<<<<<< HEAD
 				if action2 == 2: 
 					print			
 					print "The note says, '92__'"
+=======
+				if action2 == 2: 			
+					print "The note says, '9278'"
+>>>>>>> b2405a06ce87aac83cf4710687c13344c8172b2c
 					inRoom = "main"
 					
 	if inRoom == "east":
@@ -111,6 +124,7 @@ while hasEscaped == 0:
 			inRoom = "main"
 		elif action == 2:
 			print
+<<<<<<< HEAD
 			print "A troll appeared."
 			print 'He says, "I am a troll."'
 			print '"I will ask you five questions"'
@@ -294,6 +308,14 @@ while hasEscaped == 0:
 	
 		if inRoom == "north": 
 			print
+=======
+			print "A person appeared."
+			print 'He says, "right, left, left, right"'
+			
+	while inRoom == "north":
+	
+		if inRoom == "north": 
+>>>>>>> b2405a06ce87aac83cf4710687c13344c8172b2c
 			print "There are two ways you can go."
 			print "Which way do you go?"
 		  
@@ -313,8 +335,12 @@ while hasEscaped == 0:
 			elif action == 3:
 				inRoom = "main"
 				
+<<<<<<< HEAD
 		if inRoom == "north":
 			print 
+=======
+		if inRoom == "north": 
+>>>>>>> b2405a06ce87aac83cf4710687c13344c8172b2c
 			print "There are two more ways you can go."
 			print "Which way do you go?"
 	  
@@ -335,7 +361,10 @@ while hasEscaped == 0:
 				inRoom = "main"
 			
 		if inRoom == "north": 
+<<<<<<< HEAD
 			print
+=======
+>>>>>>> b2405a06ce87aac83cf4710687c13344c8172b2c
 			print "There are two more ways you can go."
 			print "Which way do you go?"
 		  
@@ -356,7 +385,10 @@ while hasEscaped == 0:
 				inRoom = "main"
 					
 		if inRoom == "north": 
+<<<<<<< HEAD
 			print
+=======
+>>>>>>> b2405a06ce87aac83cf4710687c13344c8172b2c
 			print "There are two more ways you can go."
 			print "Which way do you go?"
 	  
@@ -378,7 +410,10 @@ while hasEscaped == 0:
 		
 		if inRoom == "north":		
 			if direcOne == "right" and direcTwo == "left" and direcThree == "left" and direcFour == "right":
+<<<<<<< HEAD
 				print
+=======
+>>>>>>> b2405a06ce87aac83cf4710687c13344c8172b2c
 				print "You finished the maze. Congratulations!!!"
 				print "You find a key on the floor."
 				
@@ -397,19 +432,31 @@ while hasEscaped == 0:
 				if choose == 2:
 					inRoom = "main"
 		  
+<<<<<<< HEAD
 	if inRoom == "south":
 		print 
 		print "There is a locked door here." 
 		print "You need a password and a key to unlock the door"
 		print "There is another door to the right."
+=======
+	if inRoom == "south": 
+		print "There is a locked door here." 
+		print "You need a password and a key to unlock the door"
+>>>>>>> b2405a06ce87aac83cf4710687c13344c8172b2c
 		
 		print 
 		print "1) Main Room" 
 		print "2) Unlock door" 
+<<<<<<< HEAD
 		print "3) Go to the door on the right."
 		print 
   
 		action = raw_input("choose #1-3: ") 
+=======
+		print 
+  
+		action = raw_input("choose #1-2: ") 
+>>>>>>> b2405a06ce87aac83cf4710687c13344c8172b2c
 		action = int(action) 
   
 		if action == 1: 
@@ -423,6 +470,7 @@ while hasEscaped == 0:
 					print 'You won! Hurray \(^.^)/'
 					hasEscaped = 1 
 				else:
+<<<<<<< HEAD
 					print
 					print "That is the wrong password."
 					print
@@ -464,6 +512,15 @@ while hasEscaped == 0:
 					
 	if inRoom == "main":
 		print 
+=======
+					print "That is the wrong password."
+			else: 
+				print "You need a key for that!" 
+  
+
+	
+	if inRoom == "main": 
+>>>>>>> b2405a06ce87aac83cf4710687c13344c8172b2c
 		print "You are in a scary warehouse." 
 		print "Try to escape if you can!" 
   
@@ -486,4 +543,7 @@ while hasEscaped == 0:
 		if action == 4: 
 			inRoom = "east" 
 			
+<<<<<<< HEAD
 	
+=======
+>>>>>>> b2405a06ce87aac83cf4710687c13344c8172b2c
