@@ -1,6 +1,15 @@
 from easyGL import *
-    
-def draw(): 
+
+blockMPF = 1
+blockX = 0
+blockY = 50
+blockW = 20
+blockH = 50  
+
+def draw():
+  global blockX, blockY, blockW, blockH, blockMPF
+  drawRect(blockX, blockY, blockW, blockH)
+  blockX = blockX - blockMPF
   setColor(0.4, 0.4, 1) #blue sky                         
   drawRect(0, 150, 800, 650)
   setColor(0,1,0) #green grass
