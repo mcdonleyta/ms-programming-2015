@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 #max adventure game
 
+=======
+>>>>>>> 3fc16bb5d98d8304c4b4b2c0960448734551cedb
 inRoom = "main"
 haskey = 0
 hasAutomatic = 0
@@ -54,8 +57,11 @@ while hasEscaped == 0 and isAlive == 1:
 	if inRoom == "South":
 		print "This room has a lot of weapons laying around"
 		
+<<<<<<< HEAD
 		print "Only pick one of them and then return to the main room"
 		
+=======
+>>>>>>> 3fc16bb5d98d8304c4b4b2c0960448734551cedb
 		print "1) pick up automatic"
 		print "2) pick up knife"
 		print "3) pick up sword"
@@ -87,6 +93,7 @@ while hasEscaped == 0 and isAlive == 1:
 		
 		fight = raw_input("what do you want to do")
 	
+<<<<<<< HEAD
 		if fight  == "coward away" or fight == "go back to main room" or fight == "main room" or fight == "1":
 			inRoom = "main"
 
@@ -97,14 +104,29 @@ while hasEscaped == 0 and isAlive == 1:
 			elif hasAutomatic == 1 or hasPistol == 1:
 				print "you lose you were a little dumb guy cuz why u were reloading u died"
 				isAlive = 0
+=======
+		if fight  == "coward away" or fight == "go back to main room" or fight == "main room" or fight == "2":
+			inRoom = "main"
+
+			if fight == "fight them" or fight == "fight" or fight == "2":
+				if hasSword == 1 or hasKnife ==1 or hasFrag == 1 or hasRocketlauncher == 1:
+					print "You were able to finish off all of them you win!"
+					hasEscaped = 1
+				else:
+					print "you lose you were a little dumb guy"
+					isAlive = 0
+>>>>>>> 3fc16bb5d98d8304c4b4b2c0960448734551cedb
 
 
 
 	if inRoom == "East":
 		print "this room has 3 things"
 		
+<<<<<<< HEAD
 		print "Only take one then return to the main room"
 		
+=======
+>>>>>>> 3fc16bb5d98d8304c4b4b2c0960448734551cedb
 		print "1) rocket launcher"
 		print "2) frag"
 		print "3) tank"
@@ -134,3 +156,61 @@ while hasEscaped == 0 and isAlive == 1:
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 3fc16bb5d98d8304c4b4b2c0960448734551cedb
