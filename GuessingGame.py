@@ -16,7 +16,7 @@ while guess != secert:## Repeat until they win
 	guess = int(guess) # "1"  to 1
 
 	if guess > secert:
-		print "Guess is to high try again"
+		print "Guess is to high 778787try again"
 	elif guess < secert: 
 		print "guess is to low" 
 		print "try again"  

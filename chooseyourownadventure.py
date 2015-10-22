@@ -24,7 +24,8 @@ if inRoom =='basement':
 	print "3) get ammo and pick up a chainsaw"
 	action2 = raw_input ("pick a thing to do") 
 	action2 = int(action2)
-	if action2 == 1:
+	if 
+	action2 == 1:
 		print "That twinkie expired  two years ago you die"
 	if action2 == 2:
 		print "You die a painful death"
