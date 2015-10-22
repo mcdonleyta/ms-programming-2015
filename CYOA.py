@@ -5,7 +5,7 @@ hasEscaped = 0
 user = raw_input("What's your name? :")
 
 user = str(user)
-print "Hello " + user + ", and welcome to my Black Butler game!"
+print "Hello " + user + ", and welcome to Mia and Olivia's Black Butler game!"
 print "I hope you have fun! :3"
 print "Claude Faustus: I hope you enjoy. :)"
 
@@ -19,7 +19,7 @@ while hasEscaped == 0:
         print
         print "1) Head back to the Main Hall."
         print "2) Pick up the candle."
-        print "3) Pick up the book... -//.//-"
+        print "3) Pick up the book... -//.//-" 
         
         action = raw_input("choose #1-3: ")
         action = int(action)
@@ -29,7 +29,7 @@ while hasEscaped == 0:
         if action == 2:
             hasKey = 1
         if action == 3:
-			print "This... book... o///o Lord..."
+			print "This... book... O///o Oh Lord Sebastian... you do have a dark sense of humor..."
 			inRoom = "main"
 
     if inRoom == "east":
@@ -67,9 +67,9 @@ while hasEscaped == 0:
         print
         print "1) Main Room"
         print "2) Unlock Door"
-        print
+        print "3) Put ear on door and try to listen for a sound."
         
-        action = raw_input("choose #1-2: ")
+        action = raw_input("choose #1-3: ")
         action = int(action)
         
         if action == 1:
@@ -91,11 +91,11 @@ while hasEscaped == 0:
         print "Claude: Indeed you can. ;D"
         
         print
-        print "1) Move North"
-        print "2) Move South"
-        print "3) Move West"
-        print "4) Move East"
-        print
+        print "1) Move North."
+        print "2) Move South."
+        print "3) Move West."
+        print "4) Move East."
+        print 
         
         action = raw_input("choose #1-4: ")
         action = int(action)
@@ -110,6 +110,7 @@ while hasEscaped == 0:
             inRoom = "east"
 
 print "You have found Ciel Phantomhive hiding in the Garden. Congratulations! You are the best, most beautiful, and coolest butler ever!"
-print "You" + user + ", win!"
-print "Claude: *Waves* Thanks for playing! >.<"
-print "You are more awesome than I thought! ;o"
+print "Congratulations " + user + ", you win!"
+print "Claude: *Hugs player* Thanks for playing. :3"
+print "We hope you had lots of fun playing, and we hope to see you again!!"
+# Mdade by Mia and Olivia! :D
