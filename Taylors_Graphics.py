@@ -65,7 +65,7 @@ def draw():
   setColorA(255.0/256.0, 255.0/256.0, 255.0/256.0, 0.8) #Cloud1
   drawRect(cloud1X + 20, cloud1Y + 50, 20, 20)
   
-  myColorA(255.0, 255.0, 255.0, 200,)                   #Cloud1
+  myColorA(255.0, 255.0, 255.0, 0.8,)                   #Cloud1
   drawRect (cloud1X + 115, cloud1Y + 50, 20, 20)
   
   setColorA(255.0/256.0, 255.0/256.0, 255.0/256.0, 0.8) #Cloud2
