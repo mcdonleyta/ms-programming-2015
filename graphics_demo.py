@@ -1,30 +1,27 @@
-from easyGL import *
-
-blockMPF = 1
-blockX = 0
-blockY = 50
-blockW = 20
-blockH = 50  
+from easyGL import * 
 
 def draw():
-  global blockX, blockY, blockW, blockH, blockMPF
-  drawRect(blockX, blockY, blockW, blockH)
-  blockX = blockX - blockMPF
   setColor(0.4, 0.4, 1) #blue sky                         
   drawRect(0, 150, 800, 650)
   setColor(0,1,0) #green grass
   drawRect(0, 0, 800, 150)
   setColor(1,0.75,0) #sun
   drawRect(700, 500, 80, 80)
-  setColorA(1, 1, 1, 1) #cloud 1
+  setColorA(1, 1, 1, 0.8) #cloud 1
   drawRect(400, 450, 30, 30)
+  setColorA(1, 1, 1, 0.8)
   drawRect(370, 420, 30, 30)
+  setColorA(1, 1, 1, 0.8)
   drawRect(430, 420, 30, 30)
+  setColorA(1, 1, 1, 0.8)
   drawRect(400, 420, 30, 30)
-  setColorA(1, 1, 1, 1) #cloud 2
+  setColorA(1, 1, 1, 0.8) #cloud 2
   drawRect(150, 350, 40, 40)
-  drawRect(110, 310, 40, 45)
-  drawRect(190, 310, 40, 35)
+  setColorA(1, 1, 1, 0.8)
+  drawRect(110, 310, 40, 40)
+  setColorA(1, 1, 1, 0.8)
+  drawRect(190, 310, 40, 40)
+  setColorA(1, 1, 1, 0.8)
   drawRect(150, 310, 43, 40)
   setColor(87/256.0, 77/256.0, 39/256.0) #house
   drawRect(400, 150, 150, 150)
