@@ -88,25 +88,25 @@ def draw():
 	setColorA(0,1,0,b4tp)
 	drawRect(150, 550, blockWidth, block4Height)
 
-	setColorA(0,0,1,b5tp)
+	setColorA(1,0,1,b5tp)
 	drawRect(200, 550, blockWidth, block5Height)
 
-	setColorA(1,0,0,b6tp)
+	setColorA(1,1,0,b6tp)
 	drawRect(250, 550, blockWidth, block6Height)
 
-	setColorA(0,1,0,b7tp)
+	setColorA(0,1,1,b7tp)
 	drawRect(300, 550, blockWidth, block7Height)
 
-	setColorA(0,0,1,b8tp)
+	setColorA(1,0,1,b8tp)
 	drawRect(350, 550, blockWidth, block8Height)
 
 	setColorA(1,0,0,b9tp)
 	drawRect(400, 550, blockWidth, block9Height)
 
-	setColorA(0,1,0,b10tp)
+	setColorA(0,1,1,b10tp)
 	drawRect(450, 550, blockWidth, block10Height)
 
-	setColorA(0,0,1,b11tp)
+	setColorA(1,0,1,b11tp)
 	drawRect(500, 550, blockWidth, block11Height)
 
 	setColorA(1,0,0,b12tp)
@@ -118,10 +118,10 @@ def draw():
 	setColorA(0,0,1,b14tp)
 	drawRect(650, 550, blockWidth, block14Height)
 
-	setColorA(1,0,0,b15tp)
+	setColorA(1,0,1,b15tp)
 	drawRect(700, 550, blockWidth, block15Height)
 
-	setColorA(0,1,0,b16tp)
+	setColorA(1,1,0,b16tp)
 	drawRect(750, 550, blockWidth, block16Height)
 
 	global x, y, incX, incY
