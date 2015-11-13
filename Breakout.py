@@ -1,80 +1,70 @@
 from easyGL import *
+import random
 
 X = 0
 Y = 0
+screenWidth = 800
+screenHeight = 600
+numBlockPerRow = 8
+numberRows = 3
+blockWidth = screenWidth/numBlockPerRow
+blockHeight = (screenHeight/2)/2/numberRows
+
 incX = 1
-incY = 2
+incY = 1
 
 def draw():
-	global X, Y, incX, incY
+	global X, Y, incX, incY, screenWidth, screenHeight, numBlockPerRow, numberRows, blockWidth, blockHeight
 	setColor(1, 0, 0)
 	drawRect(X, Y, 10, 10)
 
-	block = 0
-	PositionX = 0
-	PositionY = 550
-	
 	#draw blocks
-	while block < 8:
-		setColor(PositionX/800.0, 0.1, 0.9)
-		drawRect(PositionX, PositionY, 100, 50)
-		PositionX = PositionX + 100
-		block = block + 1
-	PositionY = PositionY - 50
-	PositionX = 0
-	while block >= 8 and block <= 16:
-		setColor(0.7, PositionX/800.0, 1)
-		drawRect(PositionX, PositionY, 100, 50)
-		PositionX = PositionX + 100
-		block = block + 1
-	PositionY = PositionY - 50
-	PositionX = 0
-	while block > 16 and block <= 25:
-		setColor(0.3, 1, PositionX/800.0)
-		drawRect(PositionX, PositionY, 100, 50)
-		PositionX = PositionX + 100
-		block = block + 1
+	block = 0
+	row = 0
+	PositionY = screenHeight - blockHeight
+	
+	while row < numberRows:
+		PositionX = 0
+		block = 0
+		color = 0
+		while block < numBlockPerRow:
+			if row == 0:
+				setColor(random.randint(0, 8)/8.0, random. randint(0, 8)/8.0, color)
+			if row == 1:
+				setColor(random.randint(0, 8)/8.0, color, random.randint(0, 8)/8.0)
+			if row == 2:
+				setColor(color, random.randint(0, 8)/8.0, random.randint(0, 8)/8.0)
+			drawRect(PositionX, PositionY, blockWidth, blockHeight)
+			PositionX = PositionX + blockWidth
+			block = block + 1
+			color = color + 0.2
+		PositionY = PositionY - blockHeight
+		row = row + 1
 	
 	#Check if hit
 	score = 0
-	PositionY = 550
-
-	PositionX = 0
-	block = 0
-	while block < 8:
-		if X > PositionX and X < PositionX + 100 and Y > PositionY and Y < PositionY + 50:
-			incY = -1
-			score = score + 1
-		block = block + 1
-		PositionX = PositionX + 100
-	PositionY = PositionY - 50
-	PositionX = 0
-	block = 0
-	while block < 8:
-		if X > PositionX and X < PositionX + 100 and Y > PositionY and Y < PositionY + 50:
-			incY = -1
-			score = score + 1
-		block = block + 1
-		PositionX = PositionX + 100
-	PositionY = PositionY - 50
-	PositionX = 0
-	block = 0
-	while block < 8:
-		if X > PositionX and X < PositionX + 100 and Y > PositionY and Y < PositionY + 50:
-			incY = -1
-			score = score + 1
-		block = block + 1
-		PositionX = PositionX + 100
+	row = 0
+	PositionY = screenHeight - blockHeight
 	
-	
+	while row < numberRows:
+		PositionX = 0
+		block = 0
+		while block < 8:
+			if X > PositionX and X < PositionX + blockWidth and Y > PositionY and Y < PositionY + blockHeight:
+				incY = -1
+				score = score + 1
+			block = block + 1
+			PositionX = PositionX + blockWidth
+		PositionY = PositionY - blockHeight
+		row = row + 1
 
 	#Moving ball
 	X = X + incX
 	Y = Y + incY
 	
-	if X > 800:
+	if X > screenWidth:
 		incX = -1
-	if Y > 600:
+	if Y > screenHeight:
 		incY = -1
 	if X < 0:
 		incX = 1
@@ -82,4 +72,4 @@ def draw():
 		incY = 1
 	
 	
-run(800, 600, "Breakout", draw)
+run(screenWidth, screenHeight, "Breakout", draw)
