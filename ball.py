@@ -4,8 +4,8 @@ blockwidth = 100
 blockheight = 50
 x = 0
 y = 0
-incx = 2
-incy = 1
+incx = 4
+incy = 2
 block = 0
 color = 1
 walld = 0
@@ -23,16 +23,16 @@ def draw():
 	y = y + incy
 	
 	if x > 900:
-		incx = -2
+		incx = -4
 	
 	if y > 780:
-		incy = -1
+		incy = -2
 	
 	if x < -1:
-		incx = 2
+		incx = 4
 	
 	if y < -1:
-		incy = 1
+		incy = 2
 	
 	color = 1
 	block = 0
@@ -64,6 +64,25 @@ def draw():
 		color = color - 0.1
 		walld = walld + 100
 		
+	color = 1
+	block = 0
+	walld = 0
+	while block < 10:
+		setColor(1, color,.361)
+		drawRect (walld,680, blockwidth, blockheight)
+		block = block + 1
+		color = color - 0.1
+		walld = walld + 100
+		
+	color = 1
+	block = 0
+	walld = 0
+	while block < 10:
+		setColor(color, color,color)
+		drawRect (walld,630, blockwidth, blockheight)
+		block = block + 1
+		color = color - 0.1
+		walld = walld + 100
 	
 	
 	
